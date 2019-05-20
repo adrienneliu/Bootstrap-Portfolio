@@ -1,44 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Bootstrap Portfolio</title>
 
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
     
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
 </head>
 
-<body>
-    <div class="container">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="#">Adrienne Liu</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarText">
-            <ul class="navbar-nav mr-auto">
-            </ul>
-            <span class="navbar-text">
-                <ul>
-                    <a class="links" href="../Bootstrap-Portfolio/contact.html">Contact</a> 
-                    <a class="links" href="../Bootstrap-Portfolio/portfolio.html">Portfolio</a> 
-                    <a class="links" href=""></class>About</a>
-                </ul>
-            </span>
-            </div>
-        </nav>
-    </div>
+<body class= "mb-2 bg-light text-white ">
 
-<div class="container">
-        <h1>About Me</h1>
-        <img src="../Bootstrap-Portfolio/lorem_cliff.jpg" class="rounded float-left" alt="cliff waters">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sit amet porttitor eget dolor. Commodo elit at imperdiet dui accumsan sit. Arcu non sodales neque sodales ut etiam. Cursus metus aliquam eleifend mi in nulla. Sed viverra ipsum nunc aliquet bibendum enim facilisis. Dui nunc mattis enim ut tellus. Sit amet consectetur adipiscing elit pellentesque habitant morbi tristique. Etiam sit amet nisl purus in mollis nunc. Eget magna fermentum iaculis eu non. Aliquam eleifend mi in nulla posuere sollicitudin. Scelerisque felis imperdiet proin fermentum leo. Feugiat scelerisque varius morbi enim. Volutpat maecenas volutpat blandit aliquam etiam erat. Eget egestas purus viverra accumsan. Faucibus pulvinar elementum integer enim neque volutpat ac tincidunt vitae. Magna fermentum iaculis eu non diam phasellus vestibulum lorem. Convallis aenean et tortor at risus.
-</div>
-    
+    <!-- navbar with color and fixed top -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light row">
+        <!-- logo with added color-->
+        <div class="container">
+            <span class="col-sm-8 navbar-text p-4 mb-2 bg-info text-white"> 
+                Adrienne Liu
+            </span>
+
+            <!-- Additional Links -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse p-3 mb-2" id="navbarNavAltMarkup" style="max-width: 350px;">
+                <div class="navbar-nav col-sm-4">
+                    <a class="nav-item nav-link" href="#">About <span class="sr-only"></span></a>
+                    <a class="nav-item nav-link" href="../Bootstrap-Portfolio/portfolio.html">Portfolio</a>
+                    <a class="nav-item nav-link" href="../Bootstrap-Portfolio/contact.html">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="container">
+        <div class="p-4 mt-5 bg-white text-secondary" style="max-width: 90%">
+            <h1>About Me</h1>
+
+
+            <p><img src="../Bootstrap-Portfolio/asset/lorem_cliff.jpg" class="rounded float-left" alt="cliff waters">
+            </p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Sit amet porttitor eget dolor. Commodo elit at imperdiet dui accumsan sit. Arcu non
+                sodales neque sodales ut etiam. </p>
+
+            <p>Cursus metus aliquam eleifend mi in nulla. Sed viverra ipsum nunc aliquet bibendum enim facilisis. Dui
+                nunc mattis enim ut tellus. Sit amet consectetur adipiscing elit pellentesque habitant morbi tristique.
+                Etiam sit amet nisl purus in mollis nunc.</p>
+
+            <p>Eget magna fermentum iaculis eu non. Aliquam eleifend mi in nulla posuere sollicitudin. Scelerisque felis
+                imperdiet proin fermentum leo. Feugiat scelerisque varius morbi enim. Volutpat maecenas volutpat blandit
+                aliquam etiam erat. Eget egestas purus viverra accumsan. Faucibus pulvinar elementum integer enim neque
+                volutpat ac tincidunt vitae. Magna fermentum iaculis eu non diam phasellus vestibulum lorem. Convallis
+                aenean et tortor at risus.</p>
+        </div>
+    </div>
 </body>
+
 </html>
